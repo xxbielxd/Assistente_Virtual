@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "vendas",
+        "resposta": "Ótimo, vou transferir você para um de nossos corretores de vendas."
+    },
+    {
+        "nome": "aluguel",
+        "resposta": "Ótimo, vou transferir você para um de nossos corretores de aluguel."
+    },
+    {
+        "nome": "administrativo",
+        "resposta": "Ótimo, vou transferir você para um de nossos administradores."
+    },
+    {
+        "nome": "financeiro",
+        "resposta": "Ótimo, vou transferir você para um de nossos contadores."
+    }
+]
