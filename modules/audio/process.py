@@ -1,7 +1,7 @@
 import wave
 import pyaudio
 import config
-
+import json
 
 def executar_audio_gerado():
     chunk = 1024
@@ -23,7 +23,8 @@ def executar_audio_gerado():
     stream.close()
     p.terminate()
 
-
+with open(config.URI_SYSTEM + r"\data\areas.json", encoding='utf-8') as file:
+    respostas = json.load(file)
 def identificar_resposta(texto):
     global respostas
     # tratar o texto

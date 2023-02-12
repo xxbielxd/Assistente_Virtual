@@ -1,10 +1,5 @@
 from modules.audio import record, process
 from modules.google import cloud
-import config
-import json
-
-with open(config.URI_SYSTEM + r"\data\areas.json") as file:
-    respostas = json.load(file)
 
 # Iniciar conversa
 cloud.text_to_wav("pt-BR-Neural2-A",
@@ -19,4 +14,4 @@ resposta = {"finalizar": False}
 while resposta["finalizar"] == False:
     resposta = process.identificar_resposta(cloud.transcribe_speech(record.write_audio(3)))
     cloud.text_to_wav("pt-BR-Neural2-A", resposta["resposta"])
-    record.executar_audio_gerado()
+    process.executar_audio_gerado()
