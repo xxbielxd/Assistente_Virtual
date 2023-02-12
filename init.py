@@ -4,7 +4,7 @@ from modules.google import cloud
 # Iniciar conversa
 cloud.text_to_wav("pt-BR-Neural2-A",
                   "Boa tarde Gabriel,"
-                  # Tudo bem com você? aqui é da imobiliária Casa dos sonhos, em que posso te ajudar? as opções são: Vendas, Aluguel, Administrativo e Financeiro
+                   "Tudo bem com você? aqui é da imobiliária Casa dos sonhos, em que posso te ajudar? as opções são: Vendas, Aluguel, Administrativo e Financeiro"
                   )
 
 process.executar_audio_gerado()

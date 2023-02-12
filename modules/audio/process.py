@@ -31,5 +31,5 @@ def identificar_resposta(texto):
     texto = str(texto).lower()
     for resposta in respostas:
         if resposta["nome"] in texto:
-            return {"finalizar": True, "resposta": resposta["resposta"]}
+            return {"finalizar": True, "resposta": resposta["resposta"], "area": resposta["nome"]}
     return {"finalizar": False, "resposta": "Desculpe eu não entendi, você pode repetir por favor?"}

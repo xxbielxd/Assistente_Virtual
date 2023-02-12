@@ -20,7 +20,9 @@ def transcribe_speech(audio_base64: str):
     response = client.recognize(config=config, audio=audio)
 
     for result in response.results:
-        return result.alternatives[0].transcript
+        texto = result.alternatives[0].transcript
+        print("fala capturada:" + texto)
+        return texto
 
 def text_to_wav(voice_name: str, text: str):
     language_code = "-".join(voice_name.split("-")[:2])
